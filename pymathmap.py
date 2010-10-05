@@ -20,14 +20,16 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-import weakref
+"""
+Mathematical map data structures in python.
 
-# TODO: OneToOne that uses ABC collections.MutableMapping
-# TODO: test if OneToOneDict is pickleable (guessing it isn't)
-# TODO: non-surjective OneToOne
-# TODO: OneToMany
-# TODO: ManyToMany
-# TODO: Make thread safe.
+For more information: http://github.com/spenthil/pymathmap/
+"""
+
+__version_info__ = ('0', '0', '1')
+__version__ = '.'.join(__version_info__)
+
+import weakref
 
 class OneToOneDict(dict):
     """ Effectively a key, key dictionary as apposed to traditional key, value dict
